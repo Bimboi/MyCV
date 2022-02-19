@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h4 {
+      @apply text-base;
+    }
+    ul, ol {
+      list-style: revert;
+      position: relative;
+    }
+    tr, td {
+      @apply align-text-top
+    }
+
+    input:checked ~ .dot {
+      transform: translateX(100%);
+      @apply bg-slate-600
+    }
+
+    .custom-dark {
+      @apply dark:bg-gray-900 dark:text-gray-200
+    }
+  }
+
+  
